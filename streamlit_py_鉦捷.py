@@ -15,11 +15,11 @@ st.set_page_config(
 # 加入標題
 st.title('安安看左邊小箭頭')
 # 使用 Magic commands 指令，顯示 Markdown
-df高屏台南 = pd.read_excel("高屏台南_csv.csv")
-df雲嘉南 = pd.read_excel("雲嘉南_csv.csv")
-df中彰投 = pd.read_excel("中彰投_csv.csv")
-df桃竹苗 = pd.read_excel("桃竹苗_csv.csv")
-df北基宜花東=pd.read_excel("北基宜花東_csv.csv")
+df高屏台南 = pd.read_csv("高屏台南_csv.csv")
+df雲嘉南 = pd.read_csv("雲嘉南_csv.csv")
+df中彰投 = pd.read_csv("中彰投_csv.csv")
+df桃竹苗 = pd.read_csv("桃竹苗_csv.csv")
+df北基宜花東=pd.read_csv("北基宜花東_csv.csv")
 
 
 area_select1 = ['高屏台南','雲嘉南','中彰投','桃竹苗','北基宜花東']
