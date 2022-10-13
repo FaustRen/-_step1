@@ -79,6 +79,14 @@ st.write("費率:   ",str(area_rate))
 st.write("總重量:",sum_重量)
 st.write("階段1計算結果為:",result)
 
+## 超長寬
+# 超長寬計算次數 = st.number_input('輸入超長寬計算次數')
+
+
+
+# for _ in 超長寬計算次數:
+    
+
 
 
 
