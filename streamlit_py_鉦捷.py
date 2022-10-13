@@ -30,7 +30,7 @@ area_select1 = ['高屏台南','雲嘉南','中彰投','桃竹苗','北基宜花
 st.sidebar.header("Please Filter Here")
 # select area
 areas = st.sidebar.selectbox(
-    "Select area:",
+    "步驟一:選範圍",
     options=area_select1,
 )
 
@@ -59,7 +59,7 @@ if areas == area_select1[4]:
     
 # select store
 縣市區域 = st.sidebar.selectbox(
-    "Select 縣市區域:",
+    "步驟二: 選區名:",
     options=area_selection)
 
 area_rate = first_area[first_area['地區']==縣市區域]
