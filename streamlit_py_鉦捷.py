@@ -41,17 +41,22 @@ if areas == area_select1[0]:
     
 if areas == area_select1[1]:
     # get area data
-    area_selection = df中彰投['地區']
-    first_area = df中彰投
+    area_selection = df雲嘉南['地區']
+    first_area = df雲嘉南
+    
     
 if areas == area_select1[2]:
     # get area data
-    area_selection = df雲嘉南['地區']
-    first_area = df雲嘉南
+    area_selection = df中彰投['地區']
+    first_area = df中彰投
+    
+    
 if areas == area_select1[3]:
     # get area data
     area_selection = df桃竹苗['地區']
     first_area = df桃竹苗    
+    
+    
 if areas == area_select1[4]:
     # get area data
     area_selection = df北基宜花東['地區']
