@@ -77,7 +77,7 @@ result = str(int(sum_重量)*area_rate*0.9)
 st.write("您選擇 ",areas," - ",縣市區域)
 st.write("費率:   ",str(area_rate))
 st.write("總重量:",sum_重量)
-st.write("根據總重量計算結果1為:",result)
+st.write("階段1計算結果為:",result)
 
 
 
