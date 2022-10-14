@@ -13,7 +13,7 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 # 加入標題
-st.title('請捷哥照步驟選擇區域')
+st.title('階段一: 總重量*區費率*0.9')
 # 使用 Magic commands 指令，顯示 Markdown
 df高屏台南 = pd.read_csv("高屏台南_csv.csv")
 df雲嘉南 = pd.read_csv("雲嘉南_csv.csv")
