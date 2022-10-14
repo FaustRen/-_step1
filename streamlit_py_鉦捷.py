@@ -27,7 +27,7 @@ area_select1 = ['高屏台南','雲嘉南','中彰投','桃竹苗','北基宜花
 
 
 ## 選地區
-st.sidebar.header("請選擇地區!")
+# st.sidebar.header("請選擇地區!")
 # # select area
 # areas = st.sidebar.selectbox(
 #     "步驟一:選範圍",
