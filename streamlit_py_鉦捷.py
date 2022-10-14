@@ -3,6 +3,7 @@ import time
 import streamlit as st
 import numpy as np
 import pandas as pd
+import base64
 ## code on terminal: streamlit run streamlit_py.py 
 
 # 網頁配置設定(要寫在所有 Streamlit 命令之前，而且只能設定一次)
@@ -12,19 +13,63 @@ st.set_page_config(
     layout="centered",
     initial_sidebar_state="collapsed",
 )
-# 加入標題
+
+## 加入標題
 st.title('階段1: 總重量x區費率x0.9')
-## 設定背景
-# https://s30876.pcdn.co/wp-content/uploads/Japan-e1634207070862-1170x630.jpg.webp
-page_bg_img = '''
-<style>
-body {
-background-image: url("https://s30876.pcdn.co/wp-content/uploads/Japan-e1634207070862-1170x630.jpg.webp");
-background-size: cover;
-}
-</style>
-'''
-st.markdown(page_bg_img, unsafe_allow_html=True)
+
+# # ## 設定背景
+# @st.cache(allow_output_mutation=True)
+# def get_base64_of_bin_file(bin_file):
+#     with open(bin_file, 'rb') as f:
+#         data = f.read()
+#     return base64.b64encode(data).decode()
+
+# def set_png_as_page_bg(png_file):
+#     bin_str = get_base64_of_bin_file(png_file)
+#     page_bg_img = '''
+#     <style>
+#     body {
+#     background-image: url("data:image/png;base64,%s");
+#     background-size: cover;
+#     }
+#     </style>
+#     ''' % bin_str
+    
+#     st.markdown(page_bg_img, unsafe_allow_html=True)
+#     return
+
+# set_png_as_page_bg('background.png')
+
+
+# # https://s30876.pcdn.co/wp-content/uploads/Japan-e1634207070862-1170x630.jpg.webp
+# page_bg_img = '''
+# <style>
+# body {
+# background-image: url("https://s30876.pcdn.co/wp-content/uploads/Japan-e1634207070862-1170x630.jpg.webp");
+# background-size: cover;
+# }
+# </style>
+# '''
+# st.markdown(page_bg_img, unsafe_allow_html=True)
+
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://images.app.goo.gl/LFCobouKtT7oZ7Qv7")
+    }
+   .sidebar .sidebar-content {
+        background: url("https://images.app.goo.gl/LFCobouKtT7oZ7Qv7")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
+
+
+
+
 
 # 使用 Magic commands 指令，顯示 Markdown
 df高屏台南 = pd.read_csv("高屏台南_csv.csv")
