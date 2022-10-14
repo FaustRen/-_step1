@@ -28,11 +28,17 @@ area_select1 = ['高屏台南','雲嘉南','中彰投','桃竹苗','北基宜花
 
 ## 選地區
 st.sidebar.header("請選擇地區!")
-# select area
-areas = st.sidebar.selectbox(
+# # select area
+# areas = st.sidebar.selectbox(
+#     "步驟一:選範圍",
+#     options=area_select1,
+# )
+# areas = st.sidebar.selectbox(
+areas = st.selectbox(
     "步驟一:選範圍",
     options=area_select1,
 )
+
 
 if areas == area_select1[0]:
     # get area data
@@ -62,8 +68,12 @@ if areas == area_select1[4]:
     area_selection = df北基宜花東['地區']
     first_area = df北基宜花東
     
-# select store
-縣市區域 = st.sidebar.selectbox(
+# # select store
+# 縣市區域 = st.sidebar.selectbox(
+#     "步驟二: 選區名:",
+#     options=area_selection)
+
+縣市區域 = st.selectbox(
     "步驟二: 選區名:",
     options=area_selection)
 
