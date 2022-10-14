@@ -4,6 +4,7 @@ import streamlit as st
 import numpy as np
 import pandas as pd
 import base64
+from PIL import Image
 ## code on terminal: streamlit run streamlit_py.py 
 
 # 網頁配置設定(要寫在所有 Streamlit 命令之前，而且只能設定一次)
@@ -13,7 +14,7 @@ st.set_page_config(
     layout="centered",
     initial_sidebar_state="collapsed",
 )
-
+image = Image.open('wallpaper-1652017.jpg')
 ## 加入標題
 st.title('階段1: 總重量x區費率x0.9')
 
