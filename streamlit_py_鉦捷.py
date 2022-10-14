@@ -100,12 +100,14 @@ st.write("費率:   ",str(area_rate))
 st.write("總重量:",sum_重量)
 st.write("階段1計算結果為:",result)
 
-## 超長寬
+# ## 超長寬
 # 超長寬計算次數 = st.number_input('輸入超長寬計算次數')
 
 
-
+# sum_ = 1
 # for _ in 超長寬計算次數:
+#     prod_x = st.number_input('輸入第',str(sum_),'個板金的長')
+#     prod_x = st.number_input('輸入第',str(sum_),'個板金的寬')
     
 
 
