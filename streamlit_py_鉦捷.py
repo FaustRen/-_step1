@@ -14,6 +14,18 @@ st.set_page_config(
 )
 # 加入標題
 st.title('階段1: 總重量x區費率x0.9')
+## 設定背景
+# https://s30876.pcdn.co/wp-content/uploads/Japan-e1634207070862-1170x630.jpg.webp
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://images.unsplash.com/photo-1542281286-9e0a16bb7366");
+background-size: cover;
+}
+</style>
+'''
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 # 使用 Magic commands 指令，顯示 Markdown
 df高屏台南 = pd.read_csv("高屏台南_csv.csv")
 df雲嘉南 = pd.read_csv("雲嘉南_csv.csv")
