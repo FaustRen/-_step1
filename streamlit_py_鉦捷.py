@@ -102,13 +102,19 @@ st.write("階段1計算結果為:",result)
 
 # ## 超長寬
 # 超長寬計算次數 = st.number_input('輸入超長寬計算次數')
+# 超長寬費率 = st.number_input('輸入超長寬費率')
 
 
-# sum_ = 1
+# cal_idx = 1
+# stage2_res = 0
 # for _ in 超長寬計算次數:
-#     prod_x = st.number_input('輸入第',str(sum_),'個板金的長')
-#     prod_x = st.number_input('輸入第',str(sum_),'個板金的寬')
+#     prod_x = st.number_input('輸入第',str(cal_idx),'個板金的長')
+#     prod_y = st.number_input('輸入第',str(cal_idx),'個板金的寬')
+#     each_res2 = (int(prod_x)+int(prod_y))
     
+#     stage2_res=stage2_res+prod_x+prod_y
+    
+#     cal_idx+=1
 
 
 
